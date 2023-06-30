@@ -123,7 +123,7 @@ public class Ohun implements Plugin, PropertyEventListener, ProcessListener, MUC
 
     public void onErrorLine(final String line)
     {
-        Log.debug(line);
+        Log.info(line);
     }
 
     public void onError(final Throwable t)
@@ -269,10 +269,15 @@ public class Ohun implements Plugin, PropertyEventListener, ProcessListener, MUC
 
     }
 
-    public void occupantLeft(JID roomJID, JID user)
+    public void occupantLeft(JID roomJID, JID user, String nickname)
     {
 
     }
+	
+	public void occupantNickKicked(JID roomJID, String nickname)
+	{
+		
+	}	
 
     public void nicknameChanged(JID roomJID, JID user, String oldNickname, String newNickname)
     {
@@ -318,7 +323,7 @@ public class Ohun implements Plugin, PropertyEventListener, ProcessListener, MUC
                     ohun.setText(json);
                     ohun.addAttribute("jid", user.toString());
                     ohun.addAttribute("type", "response");
-                    room.send(notification);
+                    room.send(notification, room.getRole());
                 }
 
             } catch (Exception e) {
