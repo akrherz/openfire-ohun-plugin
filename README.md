@@ -1,3 +1,5 @@
+<i>This Openfire plugin has been <b>deprecated</b> in favour of audio conferencing using WHIP and WHEP. Use the <a href=https://github.com/igniterealtime/openfire-orinayo-plugin>orinayo plugin</a> for acces to a server (BroadcastBox) and the <a href=https://github.com/deleolajide/mornin.fm>Mornin web app client</a> modified to use WHIP and WHEP instead of a <a href=https://github.com/MixinNetwork>kraken server</a></i>.
+
 # Ohùn Plugin for openfire
 
 <table><tr>
