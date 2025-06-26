@@ -6,9 +6,10 @@
     <description>${project.description}</description>
     <version>${project.version}</version>
     <licenseType>Apache 2.0</licenseType>
-    <date>2023-11-27</date>
+    <date>2025-06-26</date>
     <minServerVersion>4.0.0</minServerVersion>
-
+    <priorToServerVersion>4.7.5</priorToServerVersion>	
+	
    <adminconsole>
         <tab id="sidebar-media-services">
             <item id="ohun-summary" name="${config.page.summary.title}" description="${config.page.summary.description}" url="ohun-summary.jsp"/>            
